@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="changeBackground('red');">
+<body>
     
 </body>
-<script >4
-function changeBackground(color) {
-    document.body.style.background = color;
- }
+<script >
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.style.backgroundColor = "red";
+
+
+    setTimeout(() => {
+        document.body.style.backgroundColor = "green";    
+    }, 3000);
+})
 </script>
 </html>
