@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <button id="orangeButton">Orange</button>
 </body>
 <script >
 document.addEventListener("DOMContentLoaded", () => {
@@ -17,5 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.backgroundColor = "green";    
     }, 3000);
 })
+document.getElementById("orangeButton").addEventListener("click", () => {
+    document.body.style.backgroundColor = "orange";
+})
+
 </script>
 </html>
