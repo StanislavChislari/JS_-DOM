@@ -7,6 +7,9 @@
 </head>
 <body>
     <button id="orangeButton">Orange</button>
+    <ul id="MyUl">
+        <li>0</li>
+      </ul>
 </body>
 <script >
 document.addEventListener("DOMContentLoaded", () => {
@@ -20,6 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("orangeButton").addEventListener("click", () => {
     document.body.style.backgroundColor = "orange";
 })
+for (var i = 1; i < 21; i++) {
+el = document.createElement('li');
+    el.innerHTML = i;
+    document.getElementById('MyUl').appendChild(el);
+}
+
+
 
 </script>
 </html>
